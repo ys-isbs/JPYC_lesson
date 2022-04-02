@@ -1,7 +1,6 @@
-let a;
 async function myFunction() {
     const provider = await new ethers.providers.Web3Provider(window.ethereum)
-    a = await provider.getBlockNumber();
+    const blockNumber = await provider.getBlockNumber();
+    console.log(blockNumber);
 }
 myFunction();
-console.log(a);
