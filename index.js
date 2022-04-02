@@ -11,7 +11,7 @@ async function myFunction2() {
     console.log(`addresses[0]: ${addresses[0]}`);
 }
 
-window.onload = function() {
-    myFunction();
-    myFunction2();
+window.onload = async function() {
+    await myFunction();
+    await myFunction2();
 }
